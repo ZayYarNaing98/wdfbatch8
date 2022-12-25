@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Date And Time</title>
+</head>
+
+<body>
+
+<div class="footer">
+	
+	<small>Copyright <span id="autoyear">2010</span> BBC News Web Design.</small>
+
+</div>
+
+<script type="text/javascript">
+	
+	let date = new Date();
+	console.log(date);
+
+	// let getdate = new Date().getDate();
+	let getdate = date.getDate();
+	console.log(getdate);
+
+	let hour = new Date().getHours();
+	console.log(hour);
+
+	let minute = new Date().getMinutes();
+	console.log(minute);
+
+	let second = new Date().getSeconds();
+	console.log(second);
+
+	// 1s = 1000ms
+	// 1 jan 1970>upnow
+
+	let time = new Date().getTime();
+	console.log(time);
+
+	let now = Date.now();
+	console.log(now);
+
+
+		// return index number, January is 0 / Dec 11
+
+    	// 0    1     2     3     4      5     6      7     8     9    10    11 
+
+	// ['jan','feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+
+	let month = new Date().getMonth();
+	console.log(month);
+
+	// return index number
+	//   0   1   2   3   4   5   6
+	// [sun,mon,tue,wed,thu,fri,sat];
+
+	let day = new Date().getDay();
+	console.log(day);
+
+	let year = new Date().getFullYear();
+	console.log(year);
+
+	document.getElementById("autoyear").textContent = year;
+
+	let utcyear = date.getUTCFullYear();
+	console.log(utcyear);
+
+
+	// m d y hr:m:s
+	let birthday = new Date('9-1-1998');
+	birthday = new Date('9-1-1998 11:25:00');
+	birthday = new Date('September 1 1998');
+	birthday = new Date('9/1/1998');
+	console.log(birthday);
+
+
+	birthday.setMonth(6); 
+	birthday.setDate(12);
+	birthday.setFullYear(1999);
+
+	birthday.setHours(12);
+	birthday.setMinutes(11);
+	birthday.setSeconds(22);
+
+	console.log(birthday);
+
+</script>	
+</body>
+
+</html>
+
+
+	 

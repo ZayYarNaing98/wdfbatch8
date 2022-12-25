@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Clock</title>
+	<style type="text/css">
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<h3 id="display">
+		<!-- 7:56:00 PM Tuesday -->
+	</h3>
+
+
+	<script type="text/javascript">
+		
+		let getdisplay = document.getElementById('display');
+		const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		// console.log(days);
+		// console.log(days[3]);
+
+		function startclock()
+		{
+			let getdate = new Date();
+			// console.log(getdate);
+
+			let gethours = getdate.getHours();
+			// console.log(gethours);
+
+			let getminutes = getdate.getMinutes();
+			// console.log(getminutes);
+
+			let getseconds = getdate.getSeconds();
+			// console.log(getseconds);
+
+			let getday = getdate.getDay();
+			// console.log(getday);
+			// console.log(days[getday]);
+
+			switch(gethours > 12)
+			{
+				case true:
+					gethours = gethours - 12;
+					getampm = "PM";
+					break;
+				case false:
+					getampm = "AM";
+					break;
+			}
+
+			// console.log(getampm);
+			// console.log(gethours);
+
+			let setclock = `${gethours} : ${getminutes} : ${getseconds} : ${getampm} : ${days[getday]}`;
+
+			getdisplay.textContent = setclock;
+
+		}
+		
+		startclock(); //die
+
+		//1s = 1000ms
+		setInterval(startclock);
+
+
+
+	</script>
+</body>
+</html>

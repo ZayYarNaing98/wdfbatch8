@@ -1,0 +1,152 @@
+.containerone .circle1, 
+.circle2, .circle3, 
+.circle4, .circle5{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(yellow,red,green,pink);
+}
+
+.containerone .circle2{
+	background: conic-gradient(#fcba03,#6a7a6f,#4c225c);
+}
+
+.containerone .circle3{
+	background: conic-gradient(rgba(41, 226, 127, 1.0),rgba(206,68,127,1.00),rgba(43,58,66,1.00));
+}
+
+.containerone .circle4{
+	background: conic-gradient(hsla(193, 100%, 33%, 1),hsla(193, 100%, 83%, 1),hsla(193, 100%, 83%, 1));
+}
+
+.containerone .circle5{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		red 40%,
+		yellow 0% 60%,
+		blue 0% 70%,
+		green 0% 100%
+	);
+}
+
+.containertwo{
+	width: 600px;
+	height: 300px;
+	background-color: green;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	opacity: 1;
+	display: flex;
+
+
+	display: flex; 
+	justify-content: center;          /*hz center*/
+	align-items: center;              /*vt center*/
+
+	/*display: grid;
+	place-items: center;*/
+
+	position: relative;
+
+	
+
+}
+
+.containertwo .c1{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	border-radius: 50%;
+
+
+	position: absolute;
+	/*left: 0;
+	top: 0;*/
+
+	z-index: 3;
+}
+
+
+
+.containertwo .c2{
+	width: 320px;
+	height: 320px;
+	/*background-color: blue;*/
+	/*background: linear-gradient(red,orange);*/
+	background: conic-gradient(
+		red,
+		violet 30%,
+		red 0%,
+		blue 0% 70%,
+		red 0%,
+		yellow
+	);
+
+	border-radius: 50%;
+
+	/*position: absolute;
+	left: 0;
+	right: 0;
+
+	z-index: 0;*/
+
+	position: absolute;
+	z-index: 2;
+}
+
+.pointercontainer{
+	width: 20px;
+	height: 200px;
+	/*background-color: gray;*/
+
+	position: absolute;
+	top: -50px;
+
+	z-index: 4;
+
+	animation-name: myani;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	transform-origin: bottom;
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 50%;
+
+	display: block;
+}
+
+@keyframes myani{
+	/*from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(-360deg);
+	}*/
+
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		/*transform: rotate(-360deg);*/
+		/*1turn=360deg*/
+		transform: rotate(1turn);
+	}
+}
+
+/*left
+right
+top
+bottom*/
+
+/*x,y
+left,top*/
+
+/*z-index:0;*/
+/*z-index is not work without position*/

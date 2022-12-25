@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+	
+
+
+	<script type="text/javascript">
+
+		const name = {
+			firstname: "aung aung",
+			lastname: "Oo"
+		}
+
+		console.log(name);
+		console.log(name.firstname,name.lastname);
+
+		// let arrgirls = ["su su", "yu yu", "mya mya"];
+
+		let arrgirls = new Array("su su", "yu yu", "mya mya");
+
+		console.log(arrgirls);
+		console.table(arrgirls);
+		console.log(arrgirls.length);
+
+		let arrboys = ["mg mg", "ko ko", "kyaw kyaw", "zaw zaw", 100];
+
+		console.log(arrboys);
+		console.log(arrboys.length);
+		console.log(arrboys[0]);
+		console.log(arrboys[2]);
+		console.log(typeof arrboys[3]);
+		console.log(arrboys[4]);
+		console.log(typeof arrboys[4]);
+
+		let x = [1200, 1300, 1400, 1500, 1600, 1700, 1800];
+
+		console.log(x);
+		console.log(x.length);
+		console.log(x[4]);
+		console.log(x[x.length-1]);
+		console.log(x[7-2]);
+		console.log(x[6]);
+
+		let y = ["hello", 1500, true, undefined, null, new Date(),{firstname:'kyaw kyaw',lastname:'aung aung'}];
+
+		console.log(y);
+		console.log(y.length);
+
+		console.log(y[0]);
+		console.log(y[5]);
+		console.log(y[6]);
+		console.log(y[6].firstname);
+		console.log(y[6].lastname);
+
+		let m = [1000,2000,3000,4000,5000];
+
+		console.log(m);
+		console.log(m.length);
+		console.log(m[2]); // get value 3000
+		console.log(m.indexOf(3000)); // result 2
+		console.log(m.indexOf(4000));
+		console.log(m.indexOf(5000));
+		console.log(m.indexOf("3000")); // result -1
+
+
+		// String is Chartacter Array in JS
+		let myfriend = "Aung Ko Ko";
+
+		console.log(myfriend);
+		console.log(typeof myfriend);
+		console.log(myfriend.length);
+		console.log(myfriend[0]);
+		console.log(myfriend[3]);
+		console.log(myfriend[myfriend.length-1]);
+
+		console.log(Array.isArray(myfriend)); //false
+
+
+		// let colors = new Array('orange', 'red', 'green', 'blue', 'violet', 'black');
+
+		// let colors = ['orange', 'red', 'green', 'blue', 'violet', 'black'];
+
+		let colors=[];
+
+		colors[0]='orange';
+		colors[1]='black';
+		colors[2]='blue';
+		colors[3]='green';
+		colors[7]='pink';
+
+		console.log(colors);
+		console.log(colors.length);
+		console.log(colors[5]);
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+<!-- 
+single value
+
+var color = "red";
+
+multi value
+
+var colors = ["red", "green", "blue"];
+ -->

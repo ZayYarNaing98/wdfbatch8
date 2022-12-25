@@ -1,0 +1,34 @@
+/*Single Selector*/
+h1{
+	color: green;
+}
+
+/*Group Selector(,)*/
+h2,h3,h4{
+	color: green;
+}
+
+div{
+	color: violet;
+}
+
+/*ID Selector*/
+#myself{
+	color: blue;
+}
+#japu,#slk{
+	color: red;
+}
+
+/*Class Selector*/
+.span{
+
+	color: darkviolet;
+}
+.ph{
+	color: brown;
+}
+.ip{
+	color: whitesmoke;
+	font-size: 30px;
+}

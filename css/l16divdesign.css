@@ -1,0 +1,61 @@
+/*Universal Selector*/
+*{
+	cursor: pointer;
+}
+.firstdiv{
+	width: 200px;
+	height: 200px;
+	/*background-color: green;*/
+	/*background-color: #4287f5;*/
+	/*background-color: rgba(220, 79, 127, 1.0);*/
+	/*background-color: hsla(153, 100%, 50%, 1);*/
+
+	background: green;
+	color: #fff;
+	font-size: 20px;
+}
+
+.seconddiv{
+	width: 300px;
+	height: 300px;
+	background-image :url("./../img/cover/bg1.jpg");
+	background-repeat: no-repeat;
+	/*background-repeat: repeat;*/
+	/*background-repeat: repeat-x;*/
+	/*background-repeat: repeat-y;*/
+	border: 1px solid green;
+	background-position: center;
+}
+
+.divthree{
+	width: 300px;
+	height: 300px;
+	/*background: linear-gradient(red,blue);*/
+	/*background: linear-gradient(red,blue,orange);*/
+
+	background: linear-gradient(-45deg,red,orange);
+
+	border: 1px solid red;
+}
+
+.divfour{
+	width: 300px;
+	height: 300px;
+	border:  1px solid red;
+	/*background: radial-gradient(red,orange);*/
+	background: radial-gradient(red,#4287f5,rgb(220, 79, 1), hsla(153, 100%, 50%, 1.0));
+}
+
+.divfive{
+	width: 300px;
+	height: 300px;
+	border: 1px solid red;
+
+	background-image: linear-gradient(rgba(67,203,127,0.3),rgba(238,224,97,0.5)),url("../img/cover/alan.jpg");
+	background-repeat: no-repeat ;
+	background-position: center;
+	background-size: cover;
+
+	cursor: pointer;
+}
+

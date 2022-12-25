@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow Function</title>
+</head>
+<body>
+	
+
+
+
+	<script type="text/javascript">
+		
+		// Regular Function
+
+		let regfun1 = function(){
+			let num1 = 60;
+			return num1;
+		}
+
+		console.log("this is regfun1 =" + regfun1());
+
+		// Arrow Function
+
+		let arrfun1 = ()=>{
+			let num1 = 20;
+			return num1;
+		}
+
+		console.log("this is arrfun1 = "+ arrfun1());
+
+
+		// Method 1
+		let arrfun2 = (num1)=>{
+			return num1;
+		}
+
+		console.log("this is arrfun2 ="+ arrfun2(20));
+
+
+		// Method 2
+		let arrfun3 = num1=>{
+			return num1;
+		}
+
+		console.log("this is arrfun3 ="+ arrfun2(20));
+
+		// Method 3
+		// let arrfun4 = num1 =>return num1+10;
+
+		// console.log("this is arrfun4 ="+ arrfun4(50));
+
+
+		// Multi Parameter
+
+		let multifun1 = (num1,num2)=>{
+			const result = num1+num2;
+			return result;
+		}
+
+		console.log("this is multifun1 ="+ multifun1(10,20));	
+
+		let multifun2 = (num1=100, num2=200)=>{
+			const result = num1+num2;
+			return result;
+		}
+
+		console.log("this is multifun2 ="+ multifun2(10,50));
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.textalign{
+	/*text-align: left;*/
+	/*text-align: right;*/
+	/*text-align: center;*/
+	text-align: justify;
+}
+a{
+	color: rosybrown;
+	text-decoration: none;
+}
+.text-dec{
+	/*text-decoration: underline;*/
+	/*text-decoration: underline;*/
+	text-decoration: line-through;
+}
+.text-line{
+	/*letter-spacing: 5px;*/
+	/*line-height: 50px;*/
+	/*line-height: 3;*;*/
+	line-height: 300%;
+}
+
+.textshadow{
+	/*h v b c*/
+	/*hoz vtl blur col*/
+
+	/*text-shadow: 5px 0 5px red;*/
+	/*text-shadow: -5px 0 5px red;*/
+
+	/*text-shadow: 0 5px 5px blue;*/
+	/*text-shadow: 0 -5px 5px blue;*/
+
+	/*text-shadow: 5px 5px 5px green;*/
+	/*text-shadow: -5px 5px 5px green;*/
+
+	/*text-shadow: -5px -5px 5px green;*/
+	/*text-shadow: 5px -5px 5px green;*/
+	text-shadow: 5px -5px 5px green, 0 5px 5px yellow, 0 -5px 10px blue;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Intro</title>
+</head>
+<body>
+
+	<div>
+		
+		<h1 id="wel" class="come">Weclome to JQuery</h1>
+		<h2 id="mm" class="mm">Weclome to Myanmar</h2>
+		<h3 id="th" class="th">Weclome to Thiland</h3>
+		<h4 id="slk" class="slk">Weclome to Sirlanka</h4>
+		<h5 id="indo" class="indo">Weclome to Indonesia</h5>
+
+
+	</div>
+	
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		
+		// console.log("hi");
+
+		$(document).ready(function(){
+
+			console.log("hey");
+			console.warn("i am js warn");
+			console.error("i am js code");
+
+			// window.alert('hay i am js alert');
+
+			// if(window.confirm('Are you sure')){
+			// 	console.log('Yes i want to delete');
+			// }else{
+			// 	console.log('Yes i want to sleep');
+			// }
+
+			// const geth1 = document.getElementById('wel');
+			// console.log(geth1);
+
+			// $('tagname');
+			// $('#idname');
+			// $('.classname');
+
+			// console.log($('h1'));
+
+			// $('h1').fadeOut();
+			$('h1').fadeOut(1000);
+			$('.mm').fadeOut(2000);
+			$('#th').fadeOut(3000);
+
+			// speed,opacity
+			// $("#slk").fadeTo(3000,0.5);
+
+			// $('#indo').fadeToggle();
+			// $('#indo').fadeToggle();
+			// $('#indo').fadeToggle();
+			// $('#indo').fadeToggle();
+			// $('#indo').fadeToggle();
+			// $('#indo').fadeToggle();
+
+			$('#indo').fadeToggle(2000);
+			$('#indo').fadeToggle(1000);
+
+
+
+
+
+
+		});
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+/*Font Integrate*/
+/*1.Internal Font Integrate(Local Font Integrate)*/
+/*(i)Local Machine Integrate*/
+/*(ii)Project Folder Integrate*/
+
+@font-face{
+	font-family: Stick;
+	/*src: url("../libs/fonts/Stick/Stick-Regular.ttf");*/
+	src: local('Stick-Regular'),url('../libs/fonts/Stick/Stick-Regular.ttf') format('woff');
+}
+
+@font-face{
+	font-family: AkayaTelivigala;
+	src: url("../libs/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf");
+}
+
+/*body{
+	font-family: Stick;
+}*/
+.p1{
+	font-family: Stick;
+}
+.p2{
+	font-family: AkayaTelivigala;
+}
+
+
+
+/*body{
+	font-family: Arial;
+}*/
+
+/*.p1, .p2{
+	font-family: Century;
+}
+
+.p3{
+	font-family: Time New Roman;
+}
+
+.p4{
+	font-family: Arial,Century,"Time New Roman",sans-serif;
+}*/
+
+/*body{
+	font-family: 'Stick', sans-serif;
+}
+*/
+
+
+
+
+
+
+/*2.External Font Integrate(Global Font Integrate)*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');*/
+
+/*body{
+	font-family: 'Stick', sans-serif;
+}*/
+
+/*.p1{
+	font-family: 'Stick';
+}
+
+.p3{
+	font-family: 'Akaya Telivigala', cursive;
+}*/
+
+
+.clickme{
+	text-decoration: none;
+	color: green;
+}
+
+/*pseduo class: vs pseduo element::*/
+.clickme:visited{
+	color: red;
+}
+.clickme:hover{
+	color: yellow;
+	font-size: 20px;
+}
+
+.p4{
+	/*font-weight: bold;*/
+	/*font-weight: bolder;*/
+
+	/*100 to 900*/
+	font-weight: 800;
+
+	/*	*/
+
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+	text-transform: capitalize;
+
+	/*Text Identation*/
+	text-indent: 50px;
+}
+
+.menu-text{
+	font-family: Arial;
+	text-decoration: none;
+	background-color: green;
+	color: #fff;
+
+	/*top bottom right left*/
+	/*padding: 30px;*/
+
+	/*top&bottom right&left*/
+	padding: 10px 30px;
+
+	/*top right bottom left*/
+	padding: 10px 20px 30px 40px;
+
+	border-radius: 10px;
+
+	/*transition: all 2s;*/
+	/*transition: background-color 2s;*/
+	/*transition: color 5s;*/
+
+	transition: background-color 2s, color 5s;
+
+}
+
+.menu-text:hover{
+	background-color: orange;
+	color: black;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+
+	transition: all 1s;
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}

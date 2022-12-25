@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Literals (Js Object)</title>
+</head>
+<body>
+	
+
+
+	<script type="text/javascript">
+		
+		let student = {
+			firstname:'Zay',
+			middle: 'Htut',
+			lastname:'Aung',
+			age:27
+		};
+
+		console.log(student);
+		console.table(student); 
+		console.log(typeof student);
+
+		console.log(student.firstname);
+		console.log(student.middle);
+		console.log(student.lastname);
+		console.log(student.age);
+
+		console.log(typeof student.firstname);
+		console.log(typeof student.age);
+
+
+		const person = {
+			firstname: 'Ko',
+			lastname: 'Tha',
+			age: 27,
+			single: true,
+			email:'kotha@gmail.com',
+
+			address: {
+				street: "60st",
+				city: "Mandalay"
+			},
+
+			country: {
+				capital: "Yangon"
+			},
+
+			hobbies:['sleep','eat','music','code']
+		};
+
+		console.log(person);
+		console.table(person);
+
+		console.log(person.firstname);
+		console.log(person.lastname);
+		console.log(person.age);
+		console.log(person.single);
+		console.log(typeof person.single);
+		console.log(typeof person.email);
+
+		console.log(person.address);
+		console.log(person.address.street);
+		console.log(person.address.city);
+
+		console.log(person.country);
+		console.log(person.country.capital);
+
+		console.log(person.hobbies);
+		console.log(person.hobbies[2]);
+		console.log(person.hobbies.length);
+		console.log(person.hobbies[person.hobbies.length-1]);
+
+		
+		
+
+	</script>
+
+</body>

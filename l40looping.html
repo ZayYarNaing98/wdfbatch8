@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Looping</title>
+</head>
+<body>
+	
+
+
+	<script type="text/javascript">
+		
+		// let obj = {
+		// 	name : "aung aung",
+		// 	age : 22
+		// };
+
+		// console.log(obj);
+		// console.log(obj.name);
+		// console.log(obj.age);
+
+		// let arrs = ['red', 'green', 'blue', 'white'];
+
+		// console.log(arrs);
+		// console.log(arrs[0]);
+		// console.log(arrs[1]);
+		// console.log(arrs[2]);
+		// console.log(arrs[3]);
+
+		// 1. For Looping
+
+			// true
+			//start end increment/decrement
+		// for (statement1; statement2; statement3)
+		// {
+		// 	code to be executed...;
+		// };
+
+
+		for(var i = 0; i < 10; i++)
+		{
+			console.log(i);
+		}
+
+		console.log("i outside value is" , i);
+
+
+		let j = 10;
+
+		for(j; j < 21; j++)
+		{
+			console.log(j);
+		}
+
+		console.log("j outside value is" , j);
+
+
+		for(var k = 0; k <= 10; k++)
+		{
+			console.log(k);
+
+			if(k===5)
+			{
+				console.log("5 is my fav number");
+			}
+
+			// console.log(k);
+
+		}
+
+		console.log("k outside value is ", k);
+
+
+		for(var m = 0; m < 10; m++)
+		{
+			console.log(m);
+
+			if(m==2)
+			{
+				console.log("2 is my fav number");
+				break;
+			}
+
+			// console.log(m);
+		}
+
+		console.log("m outside value is ", m);
+
+		for(var p = 0; p < 10; p++)
+		{
+			console.log(p);
+
+			if(p===2)
+			{
+				console.log(p + " is my fav number");
+
+				continue;
+			}
+
+			// console.log(p);
+		}
+
+		console.log("p outside value is",p);
+
+		for(var q = 0; q < 10; q++)
+		{
+			if(q===2)
+			{
+				console.log(q+" is my fav number");
+				continue;
+			}
+
+			if(q===5)
+			{
+				console.log(q+" is my fav number");
+				break;
+			}
+
+			console.log(q);
+		}
+
+		console.log("q outside value is",q);
+
+		for(var s = 10; s > 0; s--)
+		{
+			console.log(s);
+		}
+
+		console.log("s outside value is ", s);
+
+
+		document.write("<h3>For Loop</h3>");
+
+		let myarrs = ['red', 'green', 'blue', 'black', 'grey', 'white'];
+
+		console.log(myarrs);
+		console.log(myarrs.length);	
+		// 0 to 5
+		// 6
+
+		// console.log(myarrs[0]);
+		// console.log(myarrs[1]);
+		// console.log(myarrs[2]);
+		// console.log(myarrs[3]);
+		// console.log(myarrs[4]);
+		// console.log(myarrs[5]);
+
+		// for(w = 0; w < 6; w++)
+		// {
+		// 	// console.log(w);
+		// 	console.log(myarrs[w]);
+		// }
+
+		for(w = 0; w < myarrs.length; w++)
+		{
+			// console.log(w);
+			document.write(myarrs[w]+"<br/>");
+		}
+
+
+		// For loop with object
+
+		const peoples = [{name:"SuSu", age:20}, {name:"ayeaye", age:22}, {name:"myamya", age:30} ];
+
+		for(let j = 0; j < peoples.length; j++)
+		{
+			// console.log(j);
+
+			document.write("Name = "+peoples[j].name + " \/ Age = "+peoples[j].age +"<br/>");
+		};
+
+
+
+		document.write("<h3>For In Loop</h3>");
+
+		// For In Loop (for object/array)
+
+		// for(key in object)
+		// {
+		// 	code to be executed..;
+		// }
+
+
+		let students ={name:"Aung Aung" , city:"Mandalay", parent: "U Ba"};
+
+		// console.log(students);
+		// console.log(students.name);
+
+
+		for(key in students)
+		{
+			// console.log(key);
+
+			// console.log(students);
+
+			// console.log(students.name);
+
+			// console.log(students.key); // undefined
+
+			// console.log(students[key]);
+
+			document.write(key+ " " + students[key] + "<br/>");
+		}
+
+		// for in loop with array
+
+		const ourteams = ["kyaw kyaw", "aung aung", "maung maung", "tun tun", "kaung kaung"];
+
+		// console.log(ourteams);
+		// console.log(ourteams[3]);
+
+		for(idx in ourteams)
+		{
+			// console.log(key);
+			document.write("for in loop result=" + ourteams[idx] +"<br/>");
+		}
+
+
+		// for in loop with string
+
+		let bd = "Happy Birthday To You";
+
+		// console.log(bd);
+
+		for(idx in bd)
+		{
+			//console.log(idx);
+
+			document.write(bd[idx] + "<br/>");
+		}
+
+		// 3. For of loop (arr)
+
+		// for(value of array){
+		// 	code to  be executed;
+		// }
+
+		document.write("<h3>For of Loop</h3>");
+
+		const members = ["su su", "nu nu", "yu yu", "lu lu", "phu phu"];
+
+		// console.log(members);
+		// console.log(members[1]);
+
+		for(member of members)
+		{
+			document.write("for of loop result =" + member +"<br/>");
+		}
+
+		let greeting = "Hello Oct";
+
+		for(val of greeting){
+			document.write(val + "<br/>");
+		}
+
+		// 4. While Loop
+
+		// start
+
+		// while(condition)
+		// {
+		// 	Before printout (in,de)
+
+		// 	code to be executed;
+
+		// 	After printout (in,de)
+		// }
+
+
+		document.write("<h3>While Loop</h3>");
+
+		let b=0;
+
+		while(b < 10)
+		{
+			console.log("Number b value is = " + b);
+			b++;
+		}
+
+		console.log("b outside value is = " + b);
+
+		var c=0;
+
+		while(c<10)
+		{
+			c++;
+			console.log("Number c value is = " + c);
+		}
+
+		console.log("c outside value is = " + c);
+
+		let mycolors = ["red", "green", "black", "blue", "white", "gray", "pink"];
+
+		// console.log(mycolors);
+
+		let koko = 0;
+
+		while(koko < mycolors.length)
+		{
+			// console.log(koko);
+
+			document.write(mycolors[koko]+"<br/>");
+			koko++;
+		}
+
+		
+		let laptops = [
+
+				{
+					cup:"core i7",
+					ram:"8gb",
+					hdd:"1tb"
+				}
+
+			];
+
+		console.log(laptops);
+		console.log(laptops[0].cup);
+
+		let d = 0;
+		while(d < laptops.length)
+		{
+			// console.log(d);
+
+			document.write("cup is = " + laptops[d].cup + "<br/>" + "ram is = "+ laptops[d].ram + "<br/>" + "hdd is = "+ laptops[d].hdd);
+			d++;
+		}
+
+
+		// 5. Do While Looop
+
+		// start
+
+		// do(end)
+		// {
+		// 	before printout(in/de)
+		// 	code to be executed;
+		// 	after printout(in/de)
+		// }while(condition);
+
+
+		document.write("<h3>Do While Loop</h3>");
+
+		let mm =0;
+
+		do{
+			console.log("MM result is = "+mm);
+			mm++;
+		}while(mm<10);
+
+		console.log("mm outside value is = " +mm);
+
+		let nn = 0;
+
+		do
+		{
+			nn++;
+			console.log("NN result is = " +nn);
+			
+		}while(nn<10);
+
+		console.log("nn outside value is = " +nn);
+
+
+		// 6. forEach Loop
+
+		// mainarrys.forEcah(function(value, index, array){
+		// 	code to be executed;
+		// });
+
+		let candycolors = ["red", "green", "orange", "violet", "black", "white", "blue"];
+
+		console.log(candycolors);
+
+		// candycolors.forEach(function(candycolor){
+		// 	console.log(candycolor);
+		// });
+
+		// candycolors.forEach(function(candycolor,idx){
+		// 	// console.log(candycolor);
+		// 	document.write("Index number is = "+ idx + " Color is = " + candycolor +"<br/>");
+		// });
+
+
+		candycolors.forEach(function(candycolor,idx,arr){
+			// console.log(candycolor);
+			// console.log(idx);
+			console.log(arr);
+		});
+
+	</script>
+</body>
+</html>

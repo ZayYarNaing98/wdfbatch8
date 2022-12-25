@@ -1,0 +1,116 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.div1{
+	width: 600px;
+	height: 200px;
+	background-color: orange;
+
+	/*top bottom left right*/
+	/*magin: 20px;*/
+
+	/*top bottom & left right*/
+	/*margin: 20px 50px;*/
+
+	/*top right bottom left*/
+	/*margin: 10px 30px 50px 100px;*/
+
+	margin-top: 40px;
+	margin-right: 50px;
+	margin-bottom: 100px;
+	margin-left: 20px;
+
+
+}
+
+.div1 .bank{
+	display: block;
+
+	margin-left: 400px;
+}
+
+.div1 .money{
+	display: block;
+
+	margin-left: 400px;
+}
+
+.div1 .coin{
+	display: block;
+	margin-left: 400px;
+
+	position: absolute;
+}
+
+
+.div2{
+	width: 600px;
+	height: 200px;
+	background-color: orange;
+
+	position: relative;
+}
+
+.div2 .bank{
+	display: block;
+
+	margin-left: 400px;
+}
+
+.div2 .money{
+	display: block;
+
+	margin-left: 400px;
+}
+
+.div2 .coin{
+	display: block;
+
+	margin-left: 400px;
+
+	position: absolute;
+}
+
+h1{
+	background-color: green;
+	margin-left: 100px;
+	display: inline;
+}
+
+small{
+	background-color: green;
+	margin-left: 100px;
+	display: block;
+}
+
+.display1{
+	width: 300px;
+	height: 100px;
+	background-color: silver;
+	border: 2px solid orangered;
+
+		/*0 to 1*/
+		/*element 0 spacing 1*/
+	/*opacity: 0;*/
+
+		/*hidden to visible*/
+		/*element 0 to spacing 1*/
+	/*visibility: hidden;*/
+
+	/*0 to 1*/
+	/*element 0 spacing 1*/
+	/*transform: scale(0);*/
+
+	/*block flex*/
+	/*element 0 spacing 0*/
+	display: none;
+}
+
+.display2{
+	width: 300px;
+	height: 100px;
+	background-color: orange;
+	border: 2px solid silver;
+}

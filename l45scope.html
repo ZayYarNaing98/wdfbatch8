@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scope</title>
+</head>
+<body>
+	
+
+
+
+	<script type="text/javascript">
+		
+		// Global Scope
+
+		const name = "tint tint";
+			//name = "kyaw kyaw"; // error
+			//const name = "aung aung"; //error
+		console.log(name);
+
+
+		let city = "Mandalay";
+			city = "Yangon";
+		// let city = "Bago"; //error
+		console.log(city);
+
+
+		var country = "Myanmar";
+			country = "Thiland";
+		var country = "Srilanka";
+		console.log(country);
+
+// --------------------------------------------------------------------------------
+
+	//Loop
+
+	// for(const x=0; x<10; x++){
+	// 	console.log(x);
+	// }
+
+	for(let d = 0; d<10; d++){
+		console.log(d);
+	}
+
+	//console.log("d outside value is =",d); //error, d is not defined
+
+	for(var e = 0; e<10; e++)
+	{
+		console.log(e);
+	}
+
+	console.log("e outside value is=",e); //result = 10
+
+	const num1 = 0;
+	let num2 = 0;
+	var num3 = 0;
+
+	// for(num1;num1<10;num1++)
+	// {
+	// 	console.log("looping num1 value by var = ", num1);
+	// }
+
+	for(num2;num2<10;num2++)
+	{
+		console.log("looping num2 value by let = ",num2)
+	}
+
+	console.log("looping num2 value by let Global =",num2);
+
+	for(num3;num3<10;num3++)
+	{
+		console.log("looping num3 vlaue by var =",num3);
+	}
+
+	console.log("looping num3 value by let Global =",num3);
+
+	// New Declare
+
+	const num5 = 1;
+	let num6 = 2;
+	var num7 = 3;
+
+	// for(const num5=0; num5<10; num5++)
+	// {
+	// 	console.log("looping num5 value by const by using declare =",num5);
+	// }
+
+	for(let num6=0; num6<10; num6++)
+	{
+		console.log("looping num6 value by let using new declare =", num6);
+	}
+
+	console.log("outside value looping num6 value by let Global =", num6); //2
+
+	for(var num7=0; num7<10; num7++)
+	{
+		console.log("looping num7 value by var using new declare =",num7);
+	}
+
+	console.log("outside value looping num6 value by let Global =",num7); //10
+
+// --------------------------------------------------------------------------------
+
+	// Object
+
+	const customers = {
+		fullname:"zeyar kyaw",
+		age:30,
+		phone:"12345"
+	}
+
+	console.log(customers);
+	console.log(customers.fullname, customers.age, customers.phone);
+
+	customers.city = "Mandalay";
+	console.log(customers);
+	console.log(customers.city);
+
+	customers.fullname ="Zeyar Thaw";
+	console.log(customers);
+
+	// Error
+
+	// customer ={
+	// 	citizen:"Chinese";
+	// }
+	// console.log(customers);
+
+	let members ={
+		fullname:"su su",
+		age:18,
+		phone:"123456789"
+	}
+
+	console.log(members);
+	console.log(members.fullname,members.age,members.phone);
+
+	members.city = "yangon";
+	console.log(members);
+	console.log(members.city);
+
+	members.age=20;
+	console.log(members);
+
+	members={
+		fullname:"aye aye"
+	}
+
+	console.log(members);
+	console.log(members.fullname);
+
+
+	var students ={
+		fullname:"aung tun tun",
+		age:16,
+		phone:"123456789"
+	}
+
+	console.log(students);
+	console.log(students.fullname,students.age,students.phone);
+
+	students.city = "Bago";
+		console.log(students);
+		console.log(students.city);
+
+		students.age = 18;
+		console.log(students);
+
+		students = {
+			fullname:"aung kyaw kyaw"
+		}
+
+		console.log(students);
+		console.log(students.fullname);
+
+// --------------------------------------------------------------------------------
+
+		// Array
+
+		const arrcolors = ["blue","green","red"];
+		console.log(arrcolors);
+
+		arrcolors[0]="violet";
+		console.log(arrcolors);
+
+		arrcolors[3]="white";
+		console.log(arrcolors);
+
+		arrcolors.push("gold");
+		console.log(arrcolors);
+
+		// Error
+		//arrcolors =["black","white","grey"];
+		// console.log(arrcolors)
+
+		let arrgirls = ['su su','aye aye','chan chan','mya mya'];
+		console.log(arrgirls);
+
+		arrgirls[0] = "phu phu";
+		console.log(arrgirls);
+
+		arrgirls[4] = "hla hla";
+		console.log(arrgirls);
+
+		arrgirls.push("pa pa");
+		console.log(arrgirls);
+
+		arrgirls = ["yu yu", "lu lu", "gar gar"];
+		console.log(arrgirls);
+
+		var arrboys = ["aung aung", "maung maung", "naung naung","kg kg"];
+		console.log(arrboys);
+
+		arrboys[0] = "kyaw kyaw";
+		console.log(arrboys);
+
+		arrgirls[4] = "zaw zaw";
+		console.log(arrboys);
+
+		arrgirls.push("naw naw");
+		console.log(arrboys);
+
+		arrboys = ["tun tun", "tune tune", "bome bome"];
+		console.log(arrboys);
+
+
+	</script>
+</body>
+</html>

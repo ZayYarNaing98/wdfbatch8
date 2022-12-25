@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>Form Elements</title>
+</head>
+<body>
+	<h3>Form Elements</h3>
+	<fieldset>
+		<legend>This is Sample Form Elements</legend>
+	<form action="" method="multiple/form-data">
+
+		<label for="firstname">FirstName:</label>
+		<input type="text" name="fristname" id="firstname" class="" placeholder="Enter your first name" autocomplete="off" autofocus minlength="3" maxlength="30" />
+
+		<br/><br/>
+
+		<label for="lastname">LastName:</label>
+		<input type="text" name="lastname" id="lastname" class="" placeholder="Enter your last name" autocomplete="off" required />
+
+		<br/><br/>
+
+		<label for="age">Age:</label>
+		<input type="number" name="age" id="age" class="" placeholder="Enter your age" min="18" max="100" />
+
+		<br/><br/>
+
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" class="" placeholder="Enter your email"/>
+
+		<br/><br/>
+
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" placeholder="Enter your password"/>
+
+		<br/><br/>
+
+		<label>Gender:</label>
+		<input type="radio" name="gender" id="male" class="" value="1" />
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="female" class="" value="0" />
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="other" class="" value="2" />
+		<label for="other">Othter</label>
+
+		<br/><br/>
+
+		<label>Fruit:</label>
+		<input type="radio" name="fruit" id="apple" class="" value="1" />
+		<label for="apple">Apple</label>
+		<input type="radio" name="fruit" id="orange" class="" value="2" />
+		<label for="orange">Orange</label>
+		<input type="radio" name="fruit" id="pineapple" class="" value="3" />
+		<label for="pineapple">Pineapple</label>
+		<input type="radio" name="fruit" id="mango" class="" value="4" />
+		<label for="mango">Mango</label>
+
+		<br/><br/>
+
+		<label>Choose your Fav Color:</label>
+		<input type="checkbox" name="favcolor" id="red" value="1" multiple />
+		<label for="red">Red</label>
+		<input type="checkbox" name="favcolor" id="green" value="2" />
+		<label for="green">Green</label>
+		<input type="checkbox" name="favcolor" id="blue" value="3" />
+		<label for="blue">Blue</label>
+
+		<br/><br/>
+
+		<label for="country">Citizen:</label>
+		<select name="country" id="country" class="">
+			<option selected disabled>Choose Country</option>
+			<option value="mm">Myanmar</option>
+			<option value="thd">Thailand</option>
+			<option value="php">Philipine</option>
+			<option value="indo">Indonesia</option>
+			<option value="slk">Srilanka</option>
+		</select>
+
+		<br/><br/>
+
+		<label for="role">Role:</label>
+		<select name="role" id="role" class="" multiple>
+			<option value="1">Mananger</option>
+			<option value="2">Editor</option>
+			<option value="3">Supervisor</option>
+			<option value="4">Sales</option>		
+		</select>
+
+		<br/><br/>
+
+		<label for="dob">DOB:</label>
+		<input type="date" name="dob" id="dob" class=""/>
+
+		<br/><br/>
+
+		<label for="bookingtime">BookingTime:</label>
+		<input type="time" name="bookingtime" id="bookingtime" class=""/>
+
+		<br/><br/>
+
+		<label for="apt">Appointment:</label>
+		<input type="datetime-local" name="apt" id="apt" class=""/>
+
+		<br/><br/>
+
+		<label for="vol">Volume</label>
+		<input type="range" name="vol" id="vol" class="" min="0" max="100" value="0" step="10" />
+
+		<br/><br/>
+
+		<label for="bio">Enter your BIO:</label>
+		<textarea name="bio" id="bio" class="" rows="10" placeholder="Write Somethings..."></textarea>
+
+		<br/><br/>
+		<label for="nrc">NRC:</label>
+		<input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user" />
+
+		<br/><br/>
+		<label for="nrc">Choose File:</label>
+		<input type="file" name="nrc" id="nrc" class="" accept="video/*" multiple capture="environment" />
+
+		<br/><br/>
+		<input type="hidden" name="abc" id="abc" class="">
+
+		<br/><br/>
+		<input type="reset" name="reset" id="" class="" value="Cancel" />
+		<input type="submit" name="register" id="register" class="" value="Register"/>
+		<button type="button" name="login" id="login" class=""/>Login</button> 
+		<button type="submit" name="signup" id="signup" class="" disabled>Signup</button>
+
+	</form>
+</fieldset>
+
+</body>
+</html>

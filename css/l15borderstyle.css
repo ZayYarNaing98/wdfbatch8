@@ -1,0 +1,103 @@
+.bdstyle1{
+	border-style: solid;
+}
+
+.bdstyle2{
+	border-style: double;
+}
+
+.bdstyle3{
+	border-style: dotted;
+}
+
+.bdstyle4{
+	border-style: dashed;
+}
+
+.bdstyle5{
+	border-style: inset;
+}
+
+.bdstyle6{
+	border-style: outset;
+}
+
+.borderdesign{
+	width: 300px;
+	height: 300px;
+
+	/*background: yellow;*/
+	background-color: rgba(196, 44, 127, 1.0);
+
+	/*border-radius: 50px;*/
+	/*clock wise*/
+	border-radius: 20px 50px 70px 100px;
+
+	/*s c c*/
+	/*border: 3px solid blue*/;
+	border: 3px dashed rgba(47, 195, 127, 1.0);
+
+
+}
+
+ul{
+	border: 1px solid yellow;
+}
+li{
+	border: 1px dotted blue;
+	width: 100px;
+	/*list-style-type: circle;*/
+	/*list-style-type: square;*/
+	/*list-style-type: decimal;*/
+	list-style-type: decimal-leading-zero;
+	/*list-style-type: none;*/
+	list-style-position: inside ;
+
+}
+
+input[type="text"]{
+	background-color: green;
+	color: #fff;
+	border-radius: 30px;
+}
+input[type="password"]{
+	background-color: gray;
+	color: #fff;
+	border-radius: 30px;
+}
+input[type="email"]{
+	width: 300px;
+	background-color: silver;
+	border-radius: 30px;
+}
+
+body{
+
+	/*background-image:url("./../img/icon/icon1.png") ;*/
+	background-image: url("./../img/icon/icon1.png");
+	/*background-image: silver ;*/
+	/*background-repeat: repeat;*/
+	background-repeat: no-repeat;
+
+	/*background-position: center;*/
+	/*background-position: left;*/
+	/*background-position: right;*/
+	/*background-position: top;*/
+	/*background-position: bottom;*/
+	/*x y*/
+	/*background-position: left top;*/
+	/*background-position: right top;*/
+	/*background-position: left top;*/
+	/*background-position: left bottom;*/
+	/*background-position: right bottom;*/
+
+	background-attachment: fixed;
+	/*background-attachment: scroll;*/
+
+}
+
+/*[value] = array
+name() = function*/
+
+
+

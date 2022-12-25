@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generator Function</title>
+</head>
+<body>
+	
+
+
+
+	<script type="text/javascript">
+		
+		function test1(){
+			return 10;
+		}
+
+		console.log(test1());
+		console.log(test1());
+		console.log(test1());
+
+		function test2(){
+			var x = 1;
+			x++;
+
+			return x;
+		}
+
+		console.log(test2());
+		console.log(test2());
+		console.log(test2());		
+
+
+		var y = 1;
+
+		function test3(){
+			y++;
+			return y;
+		}
+
+		console.log(test3());
+		console.log(test3());
+		console.log(test3());
+		console.log(test3());
+
+		// Generator Function
+
+		function* genfun(){
+			yield 1;
+			yield 2;
+			yield 3;
+		}
+
+		const getgenfun = genfun();
+
+		// console.log(getgenfun.next().value); //1
+		// console.log(getgenfun.next().value); //undfined
+		// console.log(getgenfun.next().value); //1 
+
+		// console.log(getgenfun.next().value);
+		// console.log(getgenfun.next().value);
+		// console.log(getgenfun.next().value);
+
+		// Assign to Variable Vs Regular Invoker
+
+		// console.log(genfun().next()); //1
+		// console.log(genfun().next()); //1
+
+		// console.log(genfun().next().value); //1
+		// console.log(genfun().next().value); //1
+
+		// var getgenfunone = genfun();
+
+		// console.log(getgenfunone.next()); // {value:1, done: false}
+		// console.log(getgenfunone.next()); //2
+
+
+	</script>
+
+</body>
+</html>
